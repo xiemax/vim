@@ -1,0 +1,9 @@
+source ~/.config/vim/plugin-configurations/fzf.vim
+source ~/.config/vim/plugin-configurations/coc.vim
+source ~/.config/vim/plugin-configurations/prettier.vim
+source ~/.config/vim/plugin-configurations/themes.vim
+source ~/.config/vim/plugin-configurations/airline.vim
+source ~/.config/vim/plugin-configurations/polyglot.vim
+source ~/.config/vim/plugin-configurations/go.vim
+source ~/.config/vim/plugin-configurations/javascript.vim
+source ~/.config/vim/plugin-configurations/blamer.vim
