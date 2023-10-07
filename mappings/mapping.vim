@@ -9,7 +9,8 @@ map gn :bn<cr>
 map gp :bp<cr>
 map gc :bd<cr>
 
-nmap <silent> <C-p> :Files<CR> " Fast file opening for search
+" Fast search text in files
+nmap <silent> <C-r> :Rg<CR>
 
 " Clipboard
 noremap <Leader>y "*y
