@@ -95,3 +95,12 @@ set nocompatible
 set modifiable
 
 au InsertLeave *.go,*.ts,*.js,*.tsx,*.jsx,*.py,*.sh write
+
+let NERDTreeShowHidden=1
+
+" autocmd FileType json autocmd BufWritePre <buffer> %!jq .
+" autocmd FileType json autocmd  BufWritePre :normal gg=G
+" autocmd  BufWritePre *.json :normal %!jq .
+autocmd FileType json autocmd BufWritePre <buffer> %!python -m json.tool
+
+

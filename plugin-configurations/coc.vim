@@ -36,7 +36,7 @@ else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
-let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-vetur', 'coc-prettier', 'coc-go', 'coc-clangd']
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-yank', 'coc-vetur', 'coc-prettier', 'coc-go', 'coc-clangd']
 
 let g:LanguageClient_serverCommands = {
       \ 'typescript': ['typescript-language-server', '--stdio'],
@@ -81,7 +81,7 @@ nmap <leader>f  <Plug>(coc-format-selected)
 augroup mygroup
   autocmd!
   " Setup formatexpr specified filetype(s)
-  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
   " Update signature help on jump placeholder
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end

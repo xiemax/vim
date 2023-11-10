@@ -27,8 +27,32 @@ nnoremap ø :NERDTree<CR>== " ALT+O open nerdtree
 noremap ˙ <Esc> :History<CR>
 
 " Clear search highlighting
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+nnoremap <silent> <S-l> :<C-u>nohlsearch<CR><S-l>
 
 " Git
 noremap gs <Esc> :Gstatus<CR> " Get git status
 noremap gl <Esc> :Gdiffsplit \| HEAD~1<CR> " Split git info for compare last commit
+
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <C-H> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+
+" move selected lines up one line
+xnoremap ˚ :m-2<CR>gv=gv
+
+" move selected lines down one line
+xnoremap ∆ :m'>+<CR>gv=gv
+
+" move current line up one line
+nnoremap ˚ :<C-u>m-2<CR>==
+
+" move current line down one line
+nnoremap ∆ :<C-u>m+<CR>==˚
+
+" Jump forward by word in insert mode
+inoremap <C-B> <C-\><C-O>b
+
+" Jump backward by word in insert mode
+inoremap <C-W> <C-\><C-O>w

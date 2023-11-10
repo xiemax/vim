@@ -7,3 +7,4 @@ source ~/.config/vim/plugin-configurations/polyglot.vim
 source ~/.config/vim/plugin-configurations/go.vim
 source ~/.config/vim/plugin-configurations/javascript.vim
 source ~/.config/vim/plugin-configurations/blamer.vim
+source ~/.config/vim/plugin-configurations/json.vim

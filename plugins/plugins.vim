@@ -25,7 +25,6 @@ Plug 'prettier/vim-prettier', {
       \ 'css',
       \ 'less',
       \ 'scss',
-      \ 'json',
       \ 'graphql',
       \ 'markdown',
       \ 'vue',
@@ -34,6 +33,7 @@ Plug 'prettier/vim-prettier', {
       \ 'html',
       \ 'swift' ] } " Good code autoformatting
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx', 'html'] } " "
+Plug 'elzr/vim-json'
 "************************* TYPESCRIPT *************************
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
